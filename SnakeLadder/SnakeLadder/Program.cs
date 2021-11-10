@@ -7,7 +7,7 @@ namespace SnakeLadder
         static void Main(string[] args)
         {
             LadderSnake ladder = new LadderSnake();
-            ladder.Position();
+            ladder.DiceRoll();
             Console.ReadLine();
         }
     }
