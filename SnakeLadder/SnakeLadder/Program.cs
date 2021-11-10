@@ -8,7 +8,7 @@ namespace SnakeLadder
         {
             LadderSnake ladder = new LadderSnake();
             ladder.DiceRoll();
-            ladder.PlayerCheck();
+            ladder.CheckPosition();
             Console.ReadLine();
         }
     }
