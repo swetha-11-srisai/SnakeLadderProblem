@@ -26,6 +26,10 @@ namespace SnakeLadder
                     break;
                 case SNAKE:
                     PlayerPosition -= DiceRoll();
+                    if (PlayerPosition < 0)
+                    {
+                        PlayerPosition = 0;
+                    }
                     break;
             }
 
