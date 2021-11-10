@@ -7,13 +7,14 @@ namespace SnakeLadder
     class LadderSnake
     {
         public const int NO_PlAY = 0, LADDER = 1, SNAKE = 2, WINNING = 100,START=0;
-        int PlayerPosition;
+        int PlayerPosition,count=0;
         public int DiceRoll()
         {
+            count++;
             Random random = new Random();
             return random.Next(1, 7);
         }
-        public void CheckPosition()
+        public void Checks()
         {
             while (PlayerPosition < 100)
             {
@@ -41,6 +42,7 @@ namespace SnakeLadder
 
 
             }
+            Console.WriteLine(count);
         }
     }
 }
